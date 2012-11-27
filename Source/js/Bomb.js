@@ -43,7 +43,7 @@ Bomb.prototype.handleCollisionWith = function(gameObjectController)
         
         cc.AudioEngine.getInstance().playEffect("Explo.caf");
 
-        var explosion = cc.Reader.load("Explosion.ccbi");
+        var explosion = cc.BuilderReader.load("Explosion.ccbi");
         explosion.setPosition(this.rootNode.getPosition());
 
         this.rootNode.getParent().addChild(explosion);

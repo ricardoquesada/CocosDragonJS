@@ -12,7 +12,7 @@ require("MainMenuScene.js");
 
 function main()
 {
-	var scene = cc.Reader.loadAsScene("MainMenuScene");
+	var scene = cc.BuilderReader.loadAsScene("MainMenuScene");
 	var director = cc.Director.getInstance();
 	var runningScene = director.getRunningScene();
 	if (runningScene === null) director.runWithScene(scene);
